@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(185, 144, 40);
+    font-family: var(--fonte1);
+}
+
+/* Isso precisa ser melhorado */
+
+header > h1{
+    font-size: max(53px, 8vw);
+}
+
+header > h1 {
+    font-size: min(113px, 13vw);
+}
+
+section > p {
+    font-size: max(30px, 3vw);
+}
+
+section > p {
+    font-size: min(36px, 3.5vw);
+    border-radius: 13px 13px;
+}
+
+footer > p {
+    font-size: max(14px, 1.7vw);
+}
+
+footer > p {
+    font-size: min(16px, 2vw);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;  
+}
+
+header > h1 {
+    padding-top: 13px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);  
+}
+
+header > p {
+    padding-bottom: 13px;
+}
+
+header > p > a {
+    font-variant: small-caps;
+
+}
+
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte3);
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    
+}
+
+section > p{
+    line-height: min(200%);
+    padding: 13px;
+}
+
+
+section.normal{    
+    padding-left: 13px;
+}
+
+section.normal > p {
+    display: inline-block;
+    color: rgb(65, 35, 1);
+    background-color: rgba(0, 0, 0, 0.113);
+    min-width: 30vw;
+    text-align:left;
+    padding-bottom: 13px;
+
+}
+
+section.imagem{
+    color: white;
+    padding-right: 13px;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 13px 0px rgba(0, 0, 0, 0.620);
+    
+}
+
+section.imagem > p{
+    display: inline-block;
+    min-width: 30vw;
+    text-align:right;
+    background-color: rgba(0, 0, 0, 0.313);
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+section.imagem#img01{
+    background-image: url("../imagens/background003.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    text-align:right;
+    color:white;
+
+}
+
+section.imagem#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    text-align:right;
+    color:white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
