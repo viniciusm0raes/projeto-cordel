@@ -39,7 +39,6 @@ section > p {
 
 section > p {
     font-size: min(36px, 3.5vw);
-    border-radius: 13px 13px;
 }
 
 footer > p {
@@ -86,12 +85,14 @@ section {
     font-family: var(--fonte3);
     padding-top: 8vh;
     padding-bottom: 8vh;
+    border-radius: 13px 13px;
     
 }
 
 section > p{
     line-height: min(200%);
     padding: 13px;
+    border-radius: 13px 13px;    
 }
 
 
